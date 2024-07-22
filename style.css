@@ -122,6 +122,8 @@ button:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 0;
+  margin: 0;
 }
 
 .embers {
@@ -197,8 +199,8 @@ button:hover {
 }
 
 .icon {
-  font-size: 3rem; /* Adjust the size as needed */
-  margin: 0 10px; /* Adjust spacing between icons */
+  font-size: 100%; /* Adjust the size as needed */
+  margin: 0 auto; /* Adjust spacing between icons */
   animation: bounce 1s ease infinite;
 }
 
@@ -207,10 +209,10 @@ button:hover {
       transform: translateY(0);
   }
   40% {
-      transform: translateY(-20px);
+      transform: translateY(-10px);
   }
   60% {
-      transform: translateY(-5px);
+      transform: translateY(-2px);
   }
 }
 
