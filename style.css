@@ -4,8 +4,8 @@ body {
   background-color: #2E2E2E;
   color: #D3D3D3;
   font-family: 'Roboto', sans-serif;
-  align-items: center;
-  justify-items: center;
+  /* align-items: center;
+  justify-items: center; */
 }
 
 h1, h2, h3 {
@@ -20,14 +20,19 @@ p {
 
 i {
   font-size: 32px;
+  transition: color 1 ease;
+}
+
+i:hover {
+  color: #FFD700;
 }
 
 
 ul li {
   display: inline;
   list-style-type: none;
-  justify-items: center;
-  align-items: center;
+  /* justify-items: center;
+  align-items: center; */
   padding: 16px;
   text-align: center;
 }
@@ -161,3 +166,40 @@ button:hover {
     transform: scale(1);
   }
 }
+
+.icon-row {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.icon {
+  font-size: 3rem; /* Adjust the size as needed */
+  margin: 0 10px; /* Adjust spacing between icons */
+  animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-20px);
+  }
+  60% {
+      transform: translateY(-5px);
+  }
+}
+
+.icon:nth-child(1) { animation-delay: 0s; }
+.icon:nth-child(2) { animation-delay: 0.1s; }
+.icon:nth-child(3) { animation-delay: 0.2s; }
+.icon:nth-child(4) { animation-delay: 0.3s; }
+.icon:nth-child(5) { animation-delay: 0.4s; }
+.icon:nth-child(6) { animation-delay: 0.5s; }
+.icon:nth-child(7) { animation-delay: 0.6s; }
+.icon:nth-child(8) { animation-delay: 0.7s; }
+.icon:nth-child(9) { animation-delay: 0.8s; }
+.icon:nth-child(10) { animation-delay: 0.9s; }
